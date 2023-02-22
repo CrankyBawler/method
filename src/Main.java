@@ -10,9 +10,9 @@ public class Main {
 
     public static int toOSTheApp(int a) {
         if (a == 0) {
-            System.out.print(" для iOS");
+            System.out.println(" для iOS");
         } else {
-            System.out.print(" для android");
+            System.out.println(" для android");
         }
         return a;
     }
@@ -26,10 +26,24 @@ public class Main {
         return a;
     }
 
+    public static int toTimeDelivery(int a) {
+        if (a < 20) {
+            System.out.println("Потребуется дней: 1");
+        } else if (a > 20 && a < 60) {
+            System.out.println("Потребуется дней: 2");
+        } else if (a > 60 && a < 100) {
+            System.out.println("Потребуется дней: 3");
+        } else {
+            System.out.println("Доставки нет");
+        }
+        return a;
+    }
+
 
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -44,4 +58,9 @@ public class Main {
         toInstalVersion(clientDeviceYear);
         toOSTheApp(clientOS);
     }
+    public static void task3() {
+        System.out.println("Задача 3");
+        int deliveryDistance = 104;
+        toTimeDelivery(deliveryDistance);
+        }
 }
