@@ -1,5 +1,5 @@
 public class Main {
-    public static int year(int year) {
+    public static int toDefinitionOfALeapYear(int year) {
         if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
             System.out.println(year + " год — високосный год");
         } else {
@@ -15,6 +15,6 @@ public class Main {
     public static void task1() {
         System.out.println("Задача 1");
         int year = 2008;
-        year(year);
+        toDefinitionOfALeapYear(year);
         }
     }
